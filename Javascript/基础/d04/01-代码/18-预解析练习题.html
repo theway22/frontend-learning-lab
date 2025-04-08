@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 第1题
+        // console.log(a,b);   // undefined undefined
+        // var a=12;
+        // var b=13;
+
+        // sum();  // 1
+        // function sum(){
+        //     console.log(1);   
+        // }
+
+        // 以上代码预解析成:
+        
+        // var a;
+        // var b;
+        // function sum(){
+        //     console.log(1); 
+        // }
+
+        // console.log(a,b);   
+        // a=12;
+        // b=13;
+        // sum();  // 1
+        
+
+
+        //---------------------------------------------------------
+        // 第2题
+
+        // console.log(a);  // undefined
+        // var a=12;
+        // function fn(){
+            
+        //     console.log(a); // undefined     作用域内var提前，为var = a;所以未定义
+        //     var a=13;
+        // }
+        // fn();
+        // console.log(a); // 12
+        
+        // 以上代码预解析成:
+        // var a
+        // function fn(){
+        //     var a
+        //     console.log(a);
+        //     a=13;
+        // }
+
+        // console.log(a);  
+        // a=12;
+        // fn();
+        // console.log(a);
+
+        //---------------------------------------------------------
+        // 第3题
+        console.log(a);  // undefined
+        var a=12;
+        function fn(){
+            console.log(a); // 12
+            a=13;  
+        }
+        fn();
+        console.log(a)  // 13
+
+
+        // 以上代码预解析成:
+        var a
+        function fn(){
+            console.log(a);  
+            a=13;  
+        }
+
+        console.log(a);  // undefined
+        a=12;
+        fn();    // 12
+        console.log(a)  // 13
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

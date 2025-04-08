@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 预解析: 浏览器在执行js之前, 会把var 定义变量语法  和 function函数 提到当前作用域的最前面,但是没有赋值
+    
+        // 浏览器的预解析过程包含哪些内容: (哪些代码会在预解析阶段被提前):
+        // 带var 的定义变量
+        // function 函数的定义
+
+        // console.log(a);
+        // var a = 10;
+
+        func()
+        function func(){
+            console.log("func");
+        }
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

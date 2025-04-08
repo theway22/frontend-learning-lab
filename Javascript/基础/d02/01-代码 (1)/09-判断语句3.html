@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 多条件判断语句
+        // 需求：用户数字1-7其中一个数字，然后弹出对应的星期数。 比如：用户输入3， 弹出星期三
+
+        var num1 =  +prompt("请输入一个数字(1~7):");
+
+        if(num1 === 1){
+            console.log("星期一");
+        }else if(num1 === 2){
+            console.log("星期二");
+        }else if(num1 === 3){
+            console.log("星期三");
+        }else if(num1 === 4){
+            console.log("星期四");
+        }else if(num1 === 5){
+            console.log("星期五");
+        }else if(num1 === 6){
+            console.log("星期六");
+        }else if(num1 === 7){
+            console.log("星期日");
+        }else{
+            // 这里的代码,当上面所有条件都不成立, 就执行这里的代码
+            console.log("请务必输入1-7");
+        }
+
+        // 从第一个条件开始判断,如果不满足条件就继续往下一个条件判断.
+        // 如果满足了条件,就执行对应的大括号里面的代码, 执行完大括号里面代码之后,整个语句就结束了.不会再继续判断了
+        // 如果所有条件都不满足,就执行else里面的代码
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 需求：让用户输入用户名和密码， (用户名为admin， 密码为123456 )，只要用户输入的用户名不是admin,密码不是123456， 就提示用户名或者密码错误。
+        // 直到用户名和密码都输入正确，才提示登录成功
+
+        do{
+            var username = prompt("请输入用户名");
+            var password = prompt("请输入密码");
+
+            // 判断用户输入是否正确
+            // if(用户名和密码输入都正确){
+            //     结束整个循环
+            // }
+            if(username==="admin" && password==="123456"){
+                alert("登录成功!");
+                break
+            }
+
+            alert("用户名或者密码错误,登录失败!");
+        }while(true);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

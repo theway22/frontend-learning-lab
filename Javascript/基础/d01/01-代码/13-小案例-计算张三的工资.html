@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 需求：   张三的工资 = 基本底薪 + 绩效
+        var base = 3000;
+        var jixiao = prompt("请输入本月的绩效:");
+
+        console.log(base);
+        console.log(jixiao);
+
+        // base+jixiao 这个结果最终是字符串, 原因是 jixiao 本身是字符串. 数字+字符串,最终是字符串. 结果是拼接起来,而不是算数加法
+        console.log("这个月的薪资为:", base+jixiao);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

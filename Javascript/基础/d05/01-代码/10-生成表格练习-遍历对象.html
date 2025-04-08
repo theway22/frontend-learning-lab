@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            width: 100px;
+            height: 30px;
+            text-align: center;
+        }
+        table,td,th{
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        // 需求:  按照这个数组,生成一个表格,在页面上显示
+        var datas = [
+            { name: '狗蛋', age: 18, gender: '男' },
+            { name: '翠花', age: 19, gender: '女' },
+            { name: '来福', age: 17, gender: '男' },
+            { name: '小白', age: 20, gender: '男' },
+        ];
+
+        var str = `<table>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>`
+        // 中间可以添加 tr 和 td标签
+        for(var i=0;i<datas.length;i++){   // 遍历数组
+            // i 下标   datas[i] 元素---- 对象
+            str = str + `<tr>`    
+            /*
+                <td>${datas[i].name}</td>
+                <td>${datas[i].age}</td>
+                <td>${datas[i].gender}</td>
+            */
+            for(var key in datas[i]){ // 遍历对象
+                str = str + `<td>${datas[i][key]}</td>`
+            }
+            str = str + `</tr>`
+        }
+        
+
+
+        str = str + `</table>`
+        document.write(str)
+    </script>
+</head>
+<body>
+    <!-- <table>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td>狗蛋</td>
+            <td>18</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>翠花</td>
+            <td>19</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>来福</td>
+            <td>17</td>
+            <td>男</td>
+        </tr>
+    </table> -->
+</body>
+</html>

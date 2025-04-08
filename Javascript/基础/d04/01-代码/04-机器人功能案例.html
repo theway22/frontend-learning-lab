@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function sum(){
+            var str = prompt("请输入一些数字,格式为:10,20,30,40");
+
+            // 1 分割字符串
+            console.log(str);
+            var arr = str.split(",");
+            console.log(arr);  //["10","20","30","40"]
+
+
+            // 2 求arr中每一项的和
+            var sum = 0;
+            for(var i=0;i<arr.length;i++){
+                // 做相加之前先转成数字,再加到sum中去
+                sum+=Number(arr[i])
+            }
+
+            alert("和为: "+sum); 
+        }
+
+
+        do{
+            var str1 = prompt("你好，我是您的智能助手，请输入下面的选项，决定功能：\r\n1.输入1，可以计算多个数字的和 \r\n2.输入2，可以得到当前的时间。\r\n3.输入3，可以随机点播歌曲，\r\n4.输入q可以退出聊天")
+
+            // 判断是不是为q
+            if(str1==="q"){
+                alert("主人,奴才这就退下!")
+                break
+            }
+
+            switch(str1){
+                //case "q":alert("主人,奴才这就退下!");break; // 这个break只能结束switch这个语句,不能结束循环
+                case "1":
+                    sum();
+                    break;
+                case "2":
+                    var date = new Date();
+                    var y = date.getFullYear(); // 获取年份
+                    var m = date.getMonth() + 1;    // 获取月份
+                    var d = date.getDate(); // 获取几号
+                    var h = date.getHours();    // 获取小时数
+                    var m2 = date.getMinutes(); // 获取分钟数
+                    var s = date.getSeconds();  // 获取秒数
+                    var d2 = date.getDay();  // 获取星期数
+
+                    alert("现在是: " + y + "-" + m + "-" + d + " " + h + ":" + m2 + ":" + s + ",星期" + d2);
+                    break;
+                case "3":
+                    
+                    var music = ["好运来", "恭喜发财", "好日子", "纤夫的爱"];
+                    alert("正在播放: "+music[parseInt(Math.random()*music.length)])
+                    break;
+                default:alert("输入格式不正确,请重新输入");break;
+            }
+
+        }while(true)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

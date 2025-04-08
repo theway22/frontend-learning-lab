@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var date = new Date();    // 创建一个日期对象(执行到这一行代码的时候的系统时间对象)
+        // 一个对象,具有很多功能
+        var y = date.getFullYear(); // 获取年份
+        var m = date.getMonth() + 1;    // 获取月份
+        var d = date.getDate(); // 获取几号
+        var h = date.getHours();    // 获取小时数
+        var m2 = date.getMinutes(); // 获取分钟数
+        var s = date.getSeconds();  // 获取秒数
+        var d2 = date.getDay();  // 获取星期数
+
+        console.log(y);
+        console.log(m);
+        console.log(d);
+        console.log(h);
+        console.log(m2);
+        console.log(s);
+        console.log(d2);
+
+        console.log("现在是: " + y + "-" + m + "-" + d + " " + h + ":" + m2 + ":" + s + ",星期" + d2);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

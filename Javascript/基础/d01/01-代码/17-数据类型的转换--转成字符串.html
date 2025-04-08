@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+
+            String()    得到一个字符串
+            num2.toString()   得到一个字符串
+            num3+""    得到一个字符串
+        */ 
+        
+        var num1 = 30;
+        console.log(String(num1), typeof String(num1));
+     
+
+        var num2 = 300;
+        console.log(num2.toString(), typeof num2.toString());
+
+
+        var num3 = 3000;
+        console.log(num3+"", typeof(num3+""));
+
+        // 了解即可   
+        // String() 可以转特殊值
+        console.log(String(null), null);
+        console.log(String(undefined), undefined);
+        console.log(null.toString());  // 报错 : Cannot read property 'toString' of null
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

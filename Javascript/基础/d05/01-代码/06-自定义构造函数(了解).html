@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // var stu1 = {name:"张三",age:17,gender:"男"}
+        // var stu2 = {
+        //     name:"李四",
+        //     age:18,
+        //     gender:"男"
+        // }
+        // var stu3 = {
+        //     name:"王五",
+        //     age:16,
+        //     gender:"女"
+        // }
+        // var stus = [stu1,stu2,stu3];
+        // console.log(stus[1].name);
+        // console.log(stus);
+        
+
+        // var stus = [{
+        //     name:"张三",
+        //     age:17,
+        //     gender:"男"
+        // },{
+        //     name:"李四",
+        //     age:18,
+        //     gender:"男"
+        // },{
+        //     name:"王五",
+        //     age:16,
+        //     gender:"女"
+        // }]
+        // console.log(stus[1].name);
+
+        // 批量生产对象  工厂函数
+        // function students(name, age, gender){
+        //     var obj = {
+        //         name:name,
+        //         age:age,
+        //         gender:gender
+        //     }
+        //     return obj
+        // }
+
+        // var stu1 = students("张三", 17, "男");
+        // var stu2 = students("李四", 18, "男");
+        // console.log(stu1);
+        // console.log(stu2);
+
+
+        // 构造函数  格式   (函数名第一个字母大写)
+        function Students(name, age, gender){    // 有点像一个模板
+            this.name = name;   // 定义属性
+            this.age = age;
+            this.gender = gender;
+            // this 就是新创建出来的对象
+            this.say = function(){
+                console.log("我的名字叫"+this.name);   // 谁调用say方法,这个this就是谁
+            }
+            
+        }
+
+        // 创建对象的格式:
+        var stu1 = new Students("张三", 17, "男");   // 创建对象
+        console.log(stu1);
+        console.log(stu1.name);
+        console.log(stu1.age);
+        console.log(stu1.gender);
+        stu1.say()
+        var stu2 = new Students("李四", 18, "男");
+        console.log(stu2);
+        console.log(stu2.name);
+        console.log(stu2.age);
+        console.log(stu2.gender);
+        stu2.say()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

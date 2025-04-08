@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //  需求1： 快速输出5次"ok"；
+        // for(var i=1;i<=5;i++){
+        //     console.log("ok"+i);
+        // }
+
+        // //  需求2： 快速输出数字1到10
+        // for(var i=1;i<=10;i++){
+        //     console.log(i);
+        // }
+
+
+        // 需求3: 在控制台输出1到10的数的累加和    0+1+2+3+4...+9+10
+        
+        // var sum = 0; // sum用来保存这个计算结果
+
+        // 计算:
+        // sum = sum + 1 = 0 + 1
+        // sum = sum + 2 = (0 + 1) + 2
+        // sum = sum + 3 = (0 + 1 + 2) + 3
+        // sum = sum + 4 = (0 + 1 + 2 + 3) + 4
+        // ...
+        // sum = sum + 10 = (0 + 1 + 2 + ...+ 9) + 10
+
+        // for(var i=1;i<=10;i++){
+        //     sum = sum + i
+        // }
+
+        // console.log("累加和为: ", sum);
+
+
+         // 需求4: 在控制台输出1到10的数字中偶数的累加和     2 + 4 + 6 + 8 + 10
+        var sum = 0;
+
+        for(var i=0;i<=10;i++){
+            // if(i是偶数){
+            if(i%2===0){
+                // 就把i加到sum里面去
+                sum = sum + i   
+            }
+            
+        }
+
+        console.log("偶数的累加和为: ", sum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

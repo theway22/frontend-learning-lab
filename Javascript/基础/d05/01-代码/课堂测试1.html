@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 求数组`var arr=[10,20,30,40,30,2,3,2,30,1,30]`中数字30出现的次数
+
+        // 提示：
+        // 定义一个新的空数组
+        // 遍历arr，把arr中值等于30的添加到新数组中  数组中添加一个新元素格式: 数组名[数组名.length] = 新的值 
+
+        var arr=[10,20,30,40,30,2,3,2,30,1,30];
+        // var newArr = [];
+        // for(var i = 0; i < arr.length; i++){
+        //     if(arr[i]===30){
+        //         newArr[newArr.length] = arr[i]
+        //     }
+        // }
+        // console.log("数组中30出现的次数为: ", newArr.length);
+
+        var c = 0;  // 保存出现的次数
+        for(var i = 0; i < arr.length; i++){
+            // 每次 遇到30 这个数,  就把c加1
+            if(arr[i]===30){
+                c++
+            }
+        }  
+        console.log("2-数组中30出现的次数为: ",c);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 封装一个函数,求1-n之间所有数的和
+        // function getSum(n){
+        //     var sum = 0;
+        //     for(var i=1;i<=n;i++){
+        //         sum += i
+        //     }
+        //     return sum;
+        // }
+        
+        // // getSum()
+        // console.log(getSum(10));
+        // var ret1 = getSum(100);
+        // console.log(ret1);
+
+
+        // 求 10+11+12+...+199+200
+        // 求 20+21+22+...+199+200
+        // 求 num1 到 num2
+        function getSum(num1, num2){
+            var sum = 0;
+            for(var i=num1;i<=num2;i++){
+                sum += i
+            }
+            return sum;
+        }
+
+        console.log(getSum(10,200));
+        console.log(getSum(20,200));
+        console.log(getSum(10,11));
+        console.log(getSum(1,10));
+        console.log(getSum(1,100));
+
+        /*
+        如何封装一个函数:
+        1 先书写普通的功能代码
+        2 把上一步的代码 用 function 函数名(){ xxx }  套起来
+        3 把需要做成或的数据,用形参代替
+        
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

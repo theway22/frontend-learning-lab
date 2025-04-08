@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        
+            Number()  转成数字
+            parseInt()   转成整型
+            parseFloat()   转成浮点数(小数)   但是不会自动补充小数位
+
+
+            NaN  特殊值,表示  Not a Number   不是一个数字
+        */ 
+        
+
+        var str1 = "300";
+        var num1 =  12.9;
+        var str2 = "15DG#$RGSERT^";
+        var str3 = "1.23";
+
+        console.log(Number(str1)); // 300
+        console.log(parseInt(str1));  //300
+
+        console.log(Number(num1));  // 12.9
+        console.log(parseInt(num1));  // 12
+
+        console.log(Number(str2));  // NaN
+        console.log(parseInt(str2));  // 15
+        console.log(parseInt("$%TT#15$Y%G%"));  // NaN
+
+        console.log(parseFloat(str3));   //1.23
+        console.log(parseFloat(str1));   //300
+        console.log(parseFloat(num1));   //12.9
+        console.log(parseFloat(str2));   // 15
+        console.log(parseFloat(60));   // 60
+
+
+
+        console.log(Number("abc"));   // NaN
+        console.log(parseInt("abc"));   // NaN
+        console.log(parseFloat("abc"));   // NaN
+        console.log(Number("10abc"));   // NaN
+        console.log(parseInt("10abc"));   // 10
+        console.log(parseFloat("10abc"));   // 10
+        console.log(Number("10"));   // 10
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

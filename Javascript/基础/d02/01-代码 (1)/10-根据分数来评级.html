@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 需求： 请输入一个分数，根据这个分数，评级为A、B、C、D、E
+        // 如果分数在90-100，就输出等级为A； 又如果分数在80-90,就输出等级为B；...
+
+        var score = +prompt("请输入一个分数");
+
+        // 伪代码:
+        // if(分数在90-100之间){
+        //     输出等级为A
+        // }
+
+        // if(90<=score<=100){    这种写法在js中不支持,不能够表示一个范围
+        if(score >= 90 && score <= 100){
+            console.log("等级为A.");
+        }else if(score >= 80 && score < 90){
+            console.log("等级为B.");
+        }else if(score >= 70 && score < 80){
+            console.log("等级为C.");
+        }else if(score >= 60 && score < 70){
+            console.log("等级为D.");
+        }else if(score >= 0 && score < 60){
+            console.log("等级为E.");
+        }else{
+            console.log("输入的格式不正确");
+        }
+
+
+
+
+
+        // console.log("5"+5+5+5);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

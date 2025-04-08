@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 了解:
+        function func(a){
+
+            // var a;   // 没有传参,相当于在函数内部var a
+            // 如果现在有需求: 可以允许调用者不传参,我们函数内部可以自动给一个默认值
+            // 例如:  传了参数,a的值就是这个参数,  如果没有传参数, 则a的默认值为1
+            a = a || 1;   // 相当于给a设置默认值
+
+            return a;
+        }
+        console.log(func(10)); // 10
+        console.log(func()); // 1
+
+
+        //  函数也可以作为形参
+        function fn(a, callback){  // 此时如果没有传第2个实参,callback就是unfefined
+
+            // callback()   // undefined 不能直接调用 :callback is not a function
+
+            // 用短路运算来避免没有传参时候的报错
+            callback && callback()  //  如果没有传,callback就是unfefined, 整个结果就是unfefined,不会报错
+        }
+
+        function f(){
+            console.log(123);
+        }
+
+        fn(1)  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

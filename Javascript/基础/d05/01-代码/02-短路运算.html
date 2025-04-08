@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // console.log(false && true);  // false
+        console.log(0 && 30);  // 0 非布尔值,会被转换成布尔值,但是最终结果还是原来的值.
+        console.log(10 && 30);  // 30
+        console.log("" && 100); // ""
+
+        console.log(200 && NaN); //NaN    
+
+        
+
+        console.log("----------------------------");
+        // console.log(false || true);  // 之前的结论:其中一个为真, 结果就是真
+        console.log(10 || 20);  // 10
+        console.log(null || 20);  // 20
+
+
+        // 结论:
+        // && 如果前面的值转换成布尔值为false,整个结果就是&&前面的值   (不一定是布尔值)
+        // && 如果前面的值转换成布尔值为true,整个结果就是&&后面的值
+        // || 如果前面的值转换成布尔值为true,整个结果就是||前面的值
+        // || 如果前面的值转换成布尔值为false,整个结果就是||后面的值
+
+
+        console.log(1&&2);  // 2
+        console.log(1 || 3 && 400 || 30 && NaN);  // 1
+        console.log(1 && 2 && 3 && 4 || 5 || NaN);  // 4
+        console.log(0 || 3 && 400 || 30 && NaN);  // 400
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

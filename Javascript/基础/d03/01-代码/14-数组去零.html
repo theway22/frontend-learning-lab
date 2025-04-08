@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //我们可以通过   数组名[数组名.length] = 值,  来给数组中添加一个新的值
+
+        // 去掉数组中的0
+        var arr = [10, 20, 0, 30, 40, 0, 60, -5, 0, 6, 5, 0, 2];
+
+        var newArr = [];  // 去掉了0之后的数组
+
+        // 一个一个地找arr中每一个元素,判断是不是为0,如果不等于0,就把它添加到newArr中.
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]!==0){
+                // 把这个元素添加到newArr中:
+                newArr[newArr.length] = arr[i]
+            }
+        }
+
+        console.log(newArr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

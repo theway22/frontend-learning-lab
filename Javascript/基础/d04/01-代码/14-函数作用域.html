@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 全局作用域: script标签包围的这个作用域, 引入的js文件的作用域
+        // 局部作用域: 各个函数内部的作用域
+        // (了解: ES6里面还有一种块级作用域   { })
+
+        var a = 10; // 全局变量,在函数外面定义的变量,可以在函数内部和外部使用
+        function func(){
+            var b = 20;  // 局部变量, 在函数内部定义的变量,只能再函数内部使用
+            console.log(a);
+            console.log(b);
+        }
+        func();
+        console.log(a);
+        console.log(b); // 报错
+
+
+        function func2(){
+            var b = 203;  // 局部变量, 在函数内部定义的变量,只能再函数内部使用
+            console.log(a);
+            console.log(b);
+        }
+    </script>
+    <script src="index.js"></script>
+</head>
+<body>
+    
+</body>
+</html>

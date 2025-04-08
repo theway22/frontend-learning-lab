@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function func(){
+            // arguments 收集所有实参的一个类似于数组的对象
+            // console.log(arguments);//["hello",10,20]
+            // console.log(arguments[0]);
+            // console.log(arguments[1]);
+            for(var i=0;i<arguments.length;i++){
+                console.log(arguments[i]);
+            }
+        }
+
+        func("hello",10,20,30);
+
+
+
+        function sum(){
+            var sum = 0;
+            // 遍历所有实参
+            for(var i=0;i<arguments.length;i++){
+                sum += arguments[i]
+            }
+            return sum;
+        }
+        console.log("和为:", sum(10,20,30,40));
+
+
+
+
+        // 封装一个函数, 利用arguments求所有实参中的最大值
+        function myMax(){
+            var max = arguments[0];   // 局部变量
+
+            for(var i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i]
+                }
+            }
+
+            return max
+        }
+        
+        console.log("最大值为:", myMax(10,20,30,8,2,));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

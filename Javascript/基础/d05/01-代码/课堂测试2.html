@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        封装一个函数，函数名为count，接收一个参数(数字)，函数返回这个数字在`[10,20,30,40,30,2,3,2,30,1,30]`这个数组在中出现的次数
+
+        ```
+        调用函数 count(30)    的结果为4
+        调用函数 count(2)    的结果为2
+        调用函数 count(40)    的结果为1
+        ```
+        */
+        function count(num){
+            var arr=[10,20,30,40,30,2,3,2,30,1,30];
+            var newArr = [];
+            for(var i = 0; i < arr.length; i++){
+                if(arr[i]===num){
+                    newArr[newArr.length] = arr[i]
+                }
+            }
+            return newArr.length
+        }
+
+        console.log(count(30));
+        console.log(count(2));
+        console.log(count(40));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

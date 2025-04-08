@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        // 把路径存在一个数组中. 将来在项目中,这些是后端给我们的.
+        var arr = [
+            "./images/00_03.png",
+            "./images/00_04.png",
+            "./images/00_05.png",
+            "./images/00_06.png",
+            "./images/00_07.png",
+            "./images/00_10.png",
+            "./images/00_11.png",
+            "./images/00_12.png",
+            "./images/00_13.png",
+            "./images/00_14.png",
+        ]
+
+        // document.write('<img src="./images/00_03.png" alt="">')
+        for(var i=0;i<arr.length;i++){
+            document.write('<img src='+arr[i]+' alt="">')
+        }
+    </script>
+</head>
+<body>
+    <!-- <img src="./images/00_03.png" alt="">
+    <img src="./images/00_04.png" alt="">
+    <img src="./images/00_05.png" alt="">
+    <img src="./images/00_06.png" alt="">
+    <img src="./images/00_07.png" alt="">
+    <img src="./images/00_10.png" alt="">
+    <img src="./images/00_11.png" alt=""> -->
+</body>
+</html>

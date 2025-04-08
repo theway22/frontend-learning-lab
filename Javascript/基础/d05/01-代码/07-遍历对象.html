@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var stu1 = {
+            name:"张三",
+            age:17,
+            gender:"男"
+        }
+
+        // 遍历stu1对象 for... in
+        for(var key in stu1){
+            // 没找到一个属性名,这里的代码就会执行1次
+            // console.log(key);   // 键名  key
+            // console.log(stu1[key]);  // 值 对象名[key]
+
+            console.log("stu1的"+key+"属性的值为:"+stu1[key]);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

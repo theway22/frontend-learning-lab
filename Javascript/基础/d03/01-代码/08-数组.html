@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        var name1 = "张三";
+        var name2 = "李四";
+        var name3 = "王五";
+        var name4 = "赵六";
+
+        var names = ["张三","李四","王五","赵六", "李七", 4123];    // 定义一个数组, 把"张三","李四","王五","赵六"保存到names这个数组里面
+
+        // 数组里面可以有任意多个数据,我们把它们称为元素.每一个元素都有自己的下标. 
+        // 第1个元素下标为0,第2个元素下标为1,第3个元素下标为2 ...   第n个元素,下标为n-1
+        // 下标有一个专业的称呼: 索引
+        // 可以通过下标来获取到元素 , 格式:    数组名[下标]
+        // 可以获取到数组中元素的个数:  格式:   数组名.length
+        // 修改王五,变成 张五,格式:   数组名[下标] = 新的值;
+        // 
+        // 一般来说,数组中数据类型最好保持一致, 便于操作. 有多个数据类型也不会报错,但是不便于后面的处理
+
+        console.log(names);  // 获取整个数组
+        console.log(names[4]);
+        console.log(names.length);  // 获取数组中元素的个数
+
+        names[2] = "张五";
+        console.log(names[2]);
+        console.log(names);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

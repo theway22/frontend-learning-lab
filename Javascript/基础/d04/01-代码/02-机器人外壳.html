@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        do{
+            var str1 = prompt("你好，我是您的智能助手，请输入下面的选项，决定功能：\r\n1.输入1，可以计算多个数字的和 \r\n2.输入2，可以得到当前的时间。\r\n3.输入3，可以随机点播歌曲，\r\n4.输入q可以退出聊天")
+
+            // 判断是不是为q
+            if(str1==="q"){
+                alert("主人,奴才这就退下!")
+                break
+            }
+
+            switch(str1){
+                //case "q":alert("主人,奴才这就退下!");break; // 这个break只能结束switch这个语句,不能结束循环
+                case "1":
+                    alert('计算多个数字的和');
+                    break;
+                case "2":alert('显示当前时间');break;
+                case "3":alert('随机点播歌曲');break;
+                default:alert("输入格式不正确,请重新输入");break;
+            }
+
+        }while(true)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

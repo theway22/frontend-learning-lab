@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // Math  数学对象,它里面会有很多跟数学相关的功能
+
+        // console.log(Math.random());  // 获取一个随机小数 , 取值范围 0到1  可以取0,取不到1
+        // [0,1)
+
+        // console.log(Math.random()*10);  // 取值范围 0到10   取不到10   小数
+
+        // console.log(parseInt(Math.random()*10)); // 取值范围 0到10   取不到10   整数  0....9
+
+        // 以上是推导过程,可以不用记,只记下面这个结论:
+        // 【1】、取 0 ,1 , 2 .... n 中随机取一个整数, 公式:   parseInt(Math.random()*(n+1))
+        // 【2】、数组中随机取一个元素:   数组名[parseInt(Math.random()*数组名.length)]
+
+        var arr = ["张三", "李四", "王五", "赵六", "李七"];
+
+        console.log(arr[parseInt(Math.random()*arr.length)]);   // parseInt(Math.random()*arr.length)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

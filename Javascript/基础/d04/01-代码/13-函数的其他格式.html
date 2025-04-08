@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // function getSum(num1,num2){
+        //     return num1+num2
+        // }
+        // 定义函数的另外一种格式
+        // var getSum = function(num1,num2){
+        //     return num1 + num2
+        // }
+
+        // var ret1 = getSum(10,20);
+        // console.log(ret1);
+
+
+
+        // 匿名函数
+        // odiv.onclick = function(num1,num2){
+        //     return num1 + num2
+        // }
+
+    
+
+        // 自调用函数
+        ;(function(){
+            // 可以有自己的一个独立的作用域,可以避免命名的相同造成的变量覆盖
+            var a = 10;
+            console.log(a);
+        })();
+
+        ;(function(){
+            var a = 20;
+            console.log(a);
+        })();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

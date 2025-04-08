@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //   && 与 并且       || 或         !非(取反符号)
+        console.log(true && true);  // true 两个为真,结果为真. 
+        console.log(true && false);  // false  
+        console.log(false && true);  // false  
+        console.log(false && false);  // false  
+        console.log("--------------------------------------------------");
+        console.log(true || true);   // true
+        console.log(true || false);  // true
+        console.log(false || true);  // true
+        console.log(false || false);  // false
+        console.log("--------------------------------------------------");
+        console.log(!true);   // false
+        console.log(!false);  // true
+        console.log(!3);   // false    3进行隐式转换,再取反
+        console.log(!"");   // true
+        console.log(!0);   // true
+        console.log(!NaN);   // true
+        console.log(!undefined);   // true
+        console.log(!null);   // true
+
+        // 结论:
+        // && 两边只要有一个为false 最终结果为false.两个都成立,结果才会成立.
+        // || 两边只要有一个为true 最终结果就为true.两边只要有一个成立,结果就会成立.
+
+        // 可以在后面的if语句中的条件判断去使用.
+
+
+        12;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

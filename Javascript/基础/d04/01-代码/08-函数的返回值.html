@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            return 写在函数内部
+
+            作用1:  return 可以把  return后面的结果返回到 函数调用的地方
+            作用2: return 可以终止函数的执行. 即函数内部return后面的代码不会执行 
+
+            一个函数,如果没有写return 它的调用结果是一个undefined
+            一个函数,如果只写return,后面没有返回值 它的调用结果也是一个undefined
+        */
+
+        
+        // 编写一个函数,实现相加的功能
+        function sum(num1,num2){
+            var ret = num1+num2;
+            return ret
+            // console.log("12345789");  不会打印了
+        }
+
+        console.log(sum(10,20));
+
+
+        var ret1 = sum(100,200);
+        console.log(ret1);
+        // console.log(typeof(a));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

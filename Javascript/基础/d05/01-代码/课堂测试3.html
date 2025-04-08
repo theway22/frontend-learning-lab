@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    // 封装一个函数，接收两个数组作为形参，函数返回新的数组是这两个数组的合并结果。例如传进去[10,20]和[30,40]，最终函数返回数组[10,20,30,40]
+
+    // function func(arr1, arr2){
+
+    //     var arr3 = [];
+
+    //     // 把arr1中所有的元素添加到arr3中去
+    //     for(var i = 0; i < arr1.length; i++){
+    //         arr3[arr3.length] = arr1[i]
+    //     }
+    //     // 把arr2中所有的元素添加到arr3中去
+    //     for(var i = 0; i < arr2.length; i++){
+    //         arr3[arr3.length] = arr2[i]
+    //     }
+    //     return arr3
+    // }
+    // console.log(func([10,20], [30,40]));
+
+
+    function func(arr1, arr2){
+        // 把arr2所有的元素添加到arr1中去
+        for(var i = 0; i<arr2.length; i++){
+            arr1[arr1.length] = arr2[i]
+        }
+
+        // 返回arr1
+        return arr1
+    }
+    console.log("结果为:", func([10,20], [30,40]));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

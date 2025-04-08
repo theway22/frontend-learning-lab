@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 用对象来描述，它的名字叫来福，它有黄色的毛hair，它有四条腿leg和一条尾巴weiba，它喜欢吃骨头，喜欢跑到隔壁村找翠花
+
+        var dog = {
+            name:"来福",
+            hair:"yellow",
+            leg:4,
+            weiba:1,
+            eat:function(){
+                // console.log("吃骨头");
+                return "吃骨头"
+            },
+            run:function(){
+                // console.log("跑到隔壁村找翠花");
+                return "跑到隔壁村找翠花"
+            }
+        }
+        console.log(dog.name+"的毛色是"+dog.hair);
+        console.log(dog.name+"有"+dog.leg+"条腿");
+        console.log(dog.name+"有"+dog.weiba+"条尾巴");
+        console.log(dog.name+"喜欢"+dog.eat());
+        console.log(dog.name+"喜欢"+dog.run());
+        console.log("-----------------------------------------------------");
+        function func(){
+            console.log("func");
+        }
+        console.log(typeof func);  // function
+        console.log(typeof dog.eat);  // function
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

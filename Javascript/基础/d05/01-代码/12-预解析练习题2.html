@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // console.log(a, b, c);  // undefined undefined undefined
+        // var a=10,b=20,c=30;   // 三个都是带var 
+        // function f(a) {// a 和 b 局部, c是全局
+        //     console.log(a, b, c);   // 10 undefined 30
+        //     var b=a=c=100;     
+        //     console.log(a, b, c); // 100 100 100
+        // }
+        // f(10,20);
+        // console.log(a, b, c); // 10 20 100
+
+
+
+
+
+        console.log(num, str);  // undefined undefined 
+        var num=18;
+        var str="lily";
+        function fn2() {
+            //var num;    num 局部且 undefined    str 是全局
+            console.log(str, num);   // "lily"  undefined
+            num=19;   
+            str="candy";
+            var num=14;
+            console.log(str, num);  //  "candy"  14
+        }
+        fn2();
+        console.log(str, num);  //  "candy"  18 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

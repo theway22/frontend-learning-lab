@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // 数组: 一个有顺序, 有长度的数据集合
+
+        // 对象: 数据信息的集合
+        //  字面量对象  
+        // {键1:值1 , 键2: 值2, 键3: 值3 ... }
+        // {属性名1:值1 , 属性名2: 值2, 属性名2: 值3 ... }
+        // {key1: value1, key2: value2, key3: value3 ...}
+        // 把一对属性名和值称为键值对
+        // 通过键名来获取值的两种方式:     格式1:  对象名.键名   格式2:  对象名["键名"]
+        // 修改属性的值       对象名.键名 = 新的值   或者   对象名["键名"] = 新的值
+        // 调用对象中的方法:     对象名.方法名()
+        var obj = {
+            name: "javascript",   // 属性
+            age: 26,   // 属性
+            job: "web",  // 属性
+            bool1: true,
+            coding:function(num){    // 方法, 本质是函数
+                console.log("执行了coding方法"+num);
+                return num
+            },
+            coding2(num){    // 方法的简写
+                console.log("执行了coding2方法"+num);
+                return num
+            }
+        }
+
+        console.log(obj.name);
+        console.log(obj.age);
+        console.log(obj.job);
+        console.log(obj["name"]);
+        console.log(obj["age"]);
+        console.log(obj["job"]);
+
+        obj.age = 27;   // 修改对象的属性
+        console.log(obj.age);
+        obj["age"] = 28;
+        console.log(obj.age);
+        console.log("--------------------------------------");
+        console.log(obj);
+        console.log(obj.bool1);
+        console.log(obj["bool1"]);
+        console.log("拿到返回值为:", obj.coding(100));;
+
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            第二种定义数组的方式:
+            var arr = new Array("张三","李四","王五","赵六", "李七");
+        
+                
+            new Array(3); 当括号里面只有一个数字,表示定义了一个长度为这个数字的 空元素的数组(所有元素都是空的)
+
+
+            如何获取这个数组中的最后一个元素, 格式  数组名[数组名.length-1]
+
+
+            我们可以通过   数组名[数组名.length] = 值,  来给数组中添加一个新的值
+        */
+
+
+        // var names = ["张三","李四","王五","赵六", "李七"]; 
+        // var names = [];  定义空数组 
+
+        // 第二种定义数组的方式:
+        var arr = new Array("张三","李四","王五","赵六", "李七");
+        console.log(arr);
+        console.log(arr[2]);
+        console.log(arr.length);
+
+        var arr2 = new Array(3);   // 当括号里面只有一个数字,表示定义了一个长度为这个数字的 空元素的数组(所有元素都是空的)
+        console.log(arr2);
+
+
+        var arr3 = [3];  // 有一个元素为数字3
+        console.log(arr3);
+        console.log(arr3.length);
+
+
+        var arr4 = [10, 20, 30, 40];
+        console.log(arr4);
+        console.log(arr4.length);  // 4
+        arr4[3] = 50
+        console.log(arr4);
+        // console.log(arr4[4]);  //undefined
+        // arr4[4] = 60;
+        // arr4[5] = 70;
+        console.log("最后一个元素为:", arr4[arr4.length-1]);
+        arr4[arr4.length] = 60
+        console.log(arr4);
+
+
+        // 如何获取这个数组中的最后一个元素
+        console.log("最后一个元素为:", arr4[arr4.length-1]);
+
+        // 我们可以通过   数组名[数组名.length] = 值,  来给数组中添加一个新的值
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

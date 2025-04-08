@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //求一个数组中所有数字的总和和平均值
+        // var arr = [10,20,30,40];
+
+        // var sum=0;
+        // for(var i=0;i<arr.length;i++){
+        //     sum+=arr[i];
+        // }
+        // console.log("和为:",sum);
+        // console.log("平均值为:",sum/arr.length);
+
+
+
+        //求数组中最大值的索引
+        var arr = [10,20,30,40,2,-5,30,50,45];
+
+        var max = arr[0];  // 保存最大值
+        var maxIndex = 0;   // 保存最大值的索引
+
+        for(var i=0;i<arr.length;i++){
+            // 如果数字中的这一项 arr[i] 大于max的话,就把arr[i]赋值给max
+            if(arr[i]>max){
+                max=arr[i]
+                // 如果数字中的这一项 arr[i] 大于max的话, 还需要更新maxIndex这个索引
+                maxIndex = i
+            }
+        }
+        console.log("最大值为:", max);
+        console.log("最大值的索引为:", maxIndex);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

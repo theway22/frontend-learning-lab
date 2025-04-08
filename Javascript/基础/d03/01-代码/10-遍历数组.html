@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+            遍历数组的格式:
+            
+            for(var i=0;i<数组名.length;i++){
+
+                // i表示 下标
+                // arr[i]表示 当前找到的元素
+            }   
+            
+
+            每找到一个元素,大括号里面的代码就会执行1次
+        */ 
+
+        var arr = [10,20,30,40,50,60,70];
+
+        // 打印出数字中每一个元素
+        // console.log(arr[0]);
+        // console.log(arr[1]);
+        // console.log(arr[2]);
+        // console.log(arr[3]);
+        // console.log(arr[4]);
+
+        // 遍历一个数组      // 遍历: 一个一个地找, 一个一个地访问,这个过程叫做遍历
+        for(var i=0;i<arr.length;i++){
+            // 遍历数组的时候, i是它们的下标
+            // arr[i]  就是当前找到的这个元素   
+            console.log(arr[i]);
+            // arr[i] = arr[i] + 2
+        }
+
+        // console.log(arr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
