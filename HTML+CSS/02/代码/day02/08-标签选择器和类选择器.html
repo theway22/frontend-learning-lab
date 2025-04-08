@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css的选择器包括：  基础选择器 和 复合选择器  
+        
+            基础选择器：   1标签选择器  2类选择器   3id选择器   4通配符选择器
+
+            标签选择器： 会把页面中所有的这种标签选中，比较少用
+            类选择器：  会把拥有这个类名的标签都选中
+        */
+
+        /* 
+            类选择器的格式(书写步骤):
+            1、给标签添加一个属性  class="类名"
+            2、在css书写环境中，  选择到这中标签    .类名{ 键值对 }
+            
+
+         */
+        /* .red表示选择到拥有red这个类的标签 */
+        .red{   
+            color:red;    /* color 是样式属性 css属性   */
+        }
+    </style>
+</head>
+<body>
+    <!--   <标签名  标签属性="值" >    -->
+    <p>这是p</p>
+    <p>这是p</p>
+    <p>这是p</p>
+    <p class="red">这是p,只有这个是红色</p>
+    <p>这是p</p>
+    <p>这是p</p>
+    <span>这是span标签</span>
+    <span>这是span标签</span>
+    <span>这是span标签</span>
+    <span>这是span标签</span>
+    <span class="red">这是span标签, 只有这个span是红色</span>
+    <span>这是span标签</span>
+</body>
+</html>

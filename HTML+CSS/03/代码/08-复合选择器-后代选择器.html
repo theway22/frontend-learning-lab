@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*   
+            后代选择器
+            空格的意思是  “里面的”
+
+             .box span   表示选择到 .box 这个盒子里面的所有span元素
+        */
+        /* .box span{
+            color:red;
+        } */
+        .box .sp{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="sp">这是span</span>
+        <ul>
+            <li><span>这是li内部的span1</span></li>
+            <li><span>这是li内部的span2</span></li>
+        </ul>
+        <p></p>
+        <dl>
+            <dt></dt>
+            <dd></dd>
+        </dl>
+    </div>
+    <span>这是div外面的span</span>
+</body>
+</html>

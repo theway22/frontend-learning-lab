@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* animation : 动画名称  播放1次动画所需时间  动画曲线  播放次数  是否往复运动
+            动画曲线： 默认ease   linear匀速  (ease-in    ease-out   ease-in-out)
+            播放次数： 正整数 无限次infinite
+            是否往复运动：   往复运动设置alternate
+            */
+            animation:play 2s 3 alternate;
+        }
+
+        /* css3动画效果分两步：  1，定义动画 2通过动画属性去给元素添加动画效果*/
+
+        /* @keyframes 动画名称 */
+        @keyframes play{
+            from{
+                left: 0;
+            }
+            to{
+                left: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

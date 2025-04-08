@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,textarea{
+            /* 去掉聚焦时候的表框效果 */
+            outline-style: none;
+        }
+        textarea{
+            width: 300px;
+            height: 150px;
+            /* 禁用textarea本身可拖拽改变大小的功能 */
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 单选按钮 和复选框  默认选中用  checked标签属性  checked="checked"   简写：checked
+    下拉选项， 默认被选中用 selected标签属性  selected="selected"
+    
+    <input type="reset">   重置按钮， 点击之后把表单回归到默认选项
+
+    <label for="sec"></label>   用来扩大点选区域。 for属性的值就是绑定的表单元素的id值 
+-->
+    <form action="#" method="GET">
+        <label for="uname">
+            用户名：<input type="text" value="" placeholder="请输入..." name="username" id="uname">      
+        </label>
+        <br><br>
+        密&emsp;码：<input type="password" name="password"> <br><br>
+        性&emsp;别：
+        <!-- 单选按钮 -->
+            <input type="radio" name="gender" checked="checked">男
+
+            <label for="women">
+                <input type="radio" name="gender" id="women">女 
+            </label>
+
+            <input type="radio" name="gender">中性
+            <!-- 扩大点选区域 -->
+            <label for="sec">
+                <input type="radio" name="gender" id="sec">保密
+            </label>
+            
+            <br><br>
+        兴&emsp;趣：
+        <!-- 复选框， 多选按钮 -->
+            <input type="checkbox" name="hobby" checked>学习
+            <input type="checkbox" name="hobby" checked>敲代码
+            <input type="checkbox" name="hobby">看书
+            <input type="checkbox" name="hobby">写字  <br><br>
+        籍&emsp;贯：
+        <select>
+            <!-- 下拉选项 -->
+            <option value="0">北京</option>
+            <option value="1">上海</option>
+            <option value="2">广州</option>
+            <option value="3" selected>成都</option>
+        </select><br><br>
+        上传文件：
+        <input type="file"><br><br>
+        个人简介：
+        <!-- 文本域 -->
+        <textarea></textarea><br><br>
+        <input type="submit" value="提交按钮">
+        <input type="button" value="普通按钮">
+        <button>按钮</button>
+        <input type="reset">
+    </form>
+    
+</body>
+</html>

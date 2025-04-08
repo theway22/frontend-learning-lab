@@ -1,0 +1,24 @@
+/* 浏览器对一些标签会添加默认样式，不同的浏览器默认样式不一定一致，
+所以在项目的最开始需要做一些样式的清除工作，比如，把一些标签的内外边距归0， 列表的默认样式也清除 */
+body,h1,h2,h3,p,ul,li,ol,dl,dt,dd{
+    margin:0;
+    padding:0;
+}
+ul,ol{
+    list-style:none;
+}
+
+
+/* 版心样式： 宽度 和 盒子居中 */
+/* 在项目中会专门准备一个版心类来只书写这两个样式 */
+.wrap{
+    width:960px;
+    margin:0 auto;
+    
+}
+
+
+.header{
+    height:66px;
+    background-color: pink;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            width: 1000px;
+            background-color: pink;
+            margin: 0 auto;
+
+        }
+        .content .box{
+            float: left;
+            width: 320px;
+            height: 290px;
+            background-color: green;
+        }
+        .content-c{
+            margin: 0 20px;
+        }
+        .bottom-box{
+            width: 1000px;
+            height: 300px;
+            background-color: #ccc;
+            margin: 0 auto;
+        }
+
+        /* .clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }   
+        .clearfix {*zoom: 1;}    */
+
+        .clearfix:before,.clearfix:after { 
+            content:"";
+            display:table; 
+        }
+        /* 现代清除浮动方案 */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 浮动造成的影响：父盒子的所有子盒子都浮动了，父盒子没给高度，父盒子的高度就变为0
+    清除浮动，就是在清除浮动带来的这个影响。
+    -->
+    <div class="content clearfix">
+        <div class="box content-l">1</div>
+        <div class="box content-c">2</div>
+        <div class="box content-r">3</div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+    <div class="bottom-box"></div>
+
+    <!-- 
+
+        <div style="clear:both"></div>   这个盒子加在所有的浮动的盒子后面
+     -->
+</body>
+</html>

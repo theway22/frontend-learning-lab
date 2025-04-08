@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            position: relative;
+        }
+        div::after{
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform:translateX(-50%) translateY(-50%);
+            border: 30px solid #ddd;
+            border-radius: 50%;
+        }
+        img{
+            transition: all .5s;
+            border-radius: 50%;
+            animation: play 3s linear infinite;
+        }
+
+        @keyframes play{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/shn.jpg" alt="">
+    </div>
+</body>
+</html>

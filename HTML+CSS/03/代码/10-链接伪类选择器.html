@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪类选择器  以冒号开头 */
+        a:link{        /*  选择到a标签，未访问过的时候的css属性*/
+            color:#000;
+        }
+        a:visited{   /*  选择到a标签，已经被访问过的时候的css属性*/
+            color:red;
+        }
+        a:hover{   /*  鼠标悬停在a标签上时候的css属性*/
+            color:blue;
+        }
+        a:active{   /* 鼠标点击a标签还没有松开按键的时候*/
+            color:green;
+        }
+
+        /*    lv  ha    lv包包好 */
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com" target="_blank">百度一下</a>
+    <a href="http://www.jd.com" target="_blank">京东一下</a>
+    <a href="http://www.163.com" target="_blank">网易一下</a>
+    <a href="http://www.qq.com" target="_blank">腾讯一下</a>
+</body>
+</html>

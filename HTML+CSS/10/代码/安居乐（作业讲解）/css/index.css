@@ -1,0 +1,470 @@
+.banner{
+    height: 360px;
+    background: url(../images/upload/index/pic_index_banner01\(1\).jpg);
+    border-top: 2px solid #dddddd;
+    position: relative;
+}
+.banner_b{
+    position: absolute;
+    left: 50%;
+    margin-left: -33px;
+    bottom: 18px;
+}
+.banner_b li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 12px;
+    float: left;
+    background-color: #000;
+}
+.banner1{
+   position: relative;
+}
+.banner1_l{
+    width: 212px;
+    height: 300px;
+    background-color:#fff;
+    position: absolute;
+    top: 10px;
+    padding: 20px 10px;
+}
+.banner1_r{
+    width: 212px;
+    height: 270px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 35px 10px;
+    text-align: center;
+}
+.banner1_l dl{
+    border-bottom: 1px solid #ddd;
+    padding-left: 5px;
+    margin-top: 20px;
+}
+.banner1_l .gzhuang{
+    border: none;
+}
+.banner1_l dt{
+    font-size: 14px;
+    color: #333;
+}
+.banner1_l dd{
+    float: left;
+    margin-right: 25px;
+    margin-top: 17px;
+    color: #999;
+}
+.banner1_r p{
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.banner1_r .minge{
+    color:red;
+}
+.banner1_r input.text{
+    width: 210px;
+    height: 40px;
+    margin-top: 10px;
+}
+.banner1_r  a{
+    color: #01af63;
+    cursor: pointer;
+}
+.banner1_r .shengq{
+    width: 193px;
+    height: 38px;
+    border: 1px solid #ddd;
+    background-color: #ff4e00;
+    margin: 0 auto;
+    line-height: 38px;
+    font-size:14px;
+    color: #fff;
+    margin-top: 20px;
+}
+/*             广告图             */
+.a1,.a2{
+    color: #333;
+    padding: 0 20px;
+}
+.a1{
+    border-right: 1px solid #333;
+}
+.zhuangxiu{
+    margin-bottom: 20px;
+}
+.zhuangxiu img{
+    margin-right: 6px;
+}
+.zhuangxiu .baozhang{
+    margin-right: 0;
+}
+.zhuangxiu ul{
+    float: left;
+}
+.zhuangxiu ul span{
+    font-size: 30px;
+    float: left;
+    margin-right: 30px;
+}
+.zhuangxiu li{
+    padding-top: 10px;
+    float: left;
+    margin-right: 17px;
+}
+.zhuangxiu .qiang{
+    float: right;
+}
+/* 装修 */
+.zhuang_l{
+    width: 474px;
+    height: 430px;
+    background-color: #333;
+    position: relative;
+    float: left;
+}
+.zhuang_l img{
+    margin-bottom: 10px;
+    /* margin-right: 5.3px; */
+}
+.zhuang_l .wu{
+    margin-right: 0;
+}
+.zhuang_l p{
+    margin-left: 20px;
+    color: #fff;
+}
+.zhuang_l .bofangb{
+    width: 95px;
+    height: 95px;
+    background:url(../images/img/ico_video_play.png) no-repeat 0 0;
+    position: absolute;
+    top: 83px;
+    left: 190px;
+}
+.zhuang_lc>div:nth-child(2){
+    margin: 0 9px;
+}
+.zhuang_l .bofangs{
+    width: 40px;
+    height: 40px;
+    background:url(../images/img/ico_video_play_sm.png) no-repeat 0 0;
+    position: absolute;
+}
+.zhuang_l .s1{
+    left: 52px;
+    bottom: 92px;
+}
+.zhuang_l .s2{
+    left: 210px;
+    bottom: 92px;
+}
+.zhuang_l .s3{
+    right: 52px;
+    bottom: 36px;
+}
+.zhuang_lc{
+    height: 84px;
+}
+.zhuang_lc>div{
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.zhuang_l>div:nth-of-type(1){
+    overflow: hidden;
+}
+/* .zhuang_l>div:nth-of-type(1)  表示选中.zhuang_l这个盒子里面的第一个div元素 */
+.zhuang_l>div:nth-of-type(1):hover .bofangb{
+    left: 190px;
+}
+.zhuang_l .bofangb{
+    left: -190px;
+    transition: all .2s;
+}
+
+.zhuang_lc>div .bofangs{
+    left: -52px;
+    bottom: 36px;
+    transition: all .3s;
+}
+.zhuang_lc>div:hover .bofangs{
+    left:52px;
+}
+
+.zhuang_l .zou,.zhuang_l .you{
+    width: 9px;
+    height: 12px;
+    position: absolute;
+}
+.zhuang_l .zou{
+    background: url(../images/img/ico_page_title_arrow.png) no-repeat 0 0;
+    left: 0;
+    bottom: 100px;
+}
+.zhuang_l .you{
+    background: url(../images/img/ico_page_title_arrow.png) no-repeat  -8px 0px;
+    right: 0;
+    bottom: 100px;
+}
+.zhuang_r{
+    float: left;
+    height: 430px;
+    width: 724px;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+
+}
+.zhuang_r li{
+    width: 240px;
+    height: 106px;
+    float: left;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.zhuang_r .l1{
+    background: url(../images/upload/index/pic_index_company_logo01.jpg) no-repeat 0 0;
+}
+.zhuang_r .l2{
+    background: url(../images/upload/index/pic_index_company_logo02.jpg) no-repeat 0 0;
+}
+.zhuang_r .l3{
+    background: url(../images/upload/index/pic_index_company_logo03.jpg) no-repeat 0 0;
+}
+.zhuang_r .l4{
+    background: url(../images/upload/index/pic_index_company_logo04.jpg) no-repeat 0 0;
+}
+.zhuang_r .l5{
+    background: url(../images/upload/index/pic_index_company_logo05.jpg) no-repeat 0 0;
+}
+.zhuang_r .l6{
+    background: url(../images/upload/index/pic_index_company_logo06.jpg) no-repeat 0 0;
+}
+.zhuang_r .l7{
+    background: url(../images/upload/index/pic_index_company_logo07.jpg) no-repeat 0 0;
+}
+.zhuang_r .l8{
+    background: url(../images/upload/index/pic_index_company_logo08.jpg) no-repeat 0 0;
+}
+.zhuang_r .l9{
+    background: url(../images/upload/index/pic_index_company_logo09.jpg) no-repeat 0 0;
+}
+.zhuang_r .l10{
+    background: url(../images/upload/index/pic_index_company_logo10.jpg) no-repeat 0 0;
+}
+.zhuang_r .l11{
+    background: url(../images/upload/index/pic_index_company_logo11.jpg) no-repeat 0 0;
+}
+/*     装修公司     */
+.fengge{
+    margin-top: 30px;
+}
+.fengge p{
+    color: #01af63;
+    font-size: 30px;
+}
+
+.fengge .gel,.fengge .gec .c1,.fengge .gec .c2,.fengge .ger{
+    overflow: hidden;
+}
+.fengge .gel:hover .hunda,.fengge .gec .c1:hover .hunda,.fengge .gec .c2:hover .hunda,.fengge .ger:hover .hunda{
+    bottom:0;
+}
+
+
+.fengge .gel{
+    position: relative;
+    float: left;
+    width: 474px;
+    height: 400px;
+    margin-right: 10px;
+    background:url(../images/upload/index/pic_index_style01.jpg);
+}
+.fengge .gec{
+    
+    float: left;
+}
+.fengge .gec .c1{
+    position: relative;
+    width: 474px;
+    height: 195px;
+    margin-bottom: 10px;
+    background:url(../images/upload/index/pic_index_style02.jpg);
+}
+.fengge .gec .c2{
+    position: relative;
+    width: 474px;
+    height: 195px;
+    background:url(../images/upload/index/pic_index_style03.jpg);
+}
+.fengge .ger{
+    position: relative;
+    width: 232px;
+    height: 400px;
+    float: right;
+    background:url(../images/upload/index/pic_index_style04.jpg);
+}
+.hunda{
+    width: 100%;
+    height: 48px;
+    background: rgba(00,00,00,0.3);
+    position: absolute;
+    left: 0;
+    bottom: -48px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 48px;
+    transition: all .5s;
+    /* padding-left: 20px; */
+    
+}
+.fengge .geb{
+    height: 180px;
+    background-color: #f1f1f1;
+    margin-top: 10px;
+    float: left;
+}
+.fengge .geb li{
+    float: left;
+    width: 85px;
+    height: 85px;
+    margin: 32px;
+    padding-top: 90px;
+    text-align: center;
+}
+.fengge .geb .l1{
+    background:url(../images/upload/index/pic_index_style_s01.png) no-repeat;
+}
+.fengge .geb .l2{
+    background:url(../images/upload/index/pic_index_style_s02.png) no-repeat;
+}
+.fengge .geb .l3{
+    background:url(../images/upload/index/pic_index_style_s03.png) no-repeat;
+}
+.fengge .geb .l4{
+    background:url(../images/upload/index/pic_index_style_s04.png) no-repeat;
+}
+.fengge .geb .l5{
+    background:url(../images/upload/index/pic_index_style_s05.png) no-repeat;
+}
+.fengge .geb .l6{
+    background:url(../images/upload/index/pic_index_style_s06.png) no-repeat;
+}
+.fengge .geb .l7{
+    background:url(../images/upload/index/pic_index_style_s07.png) no-repeat;
+}
+.fengge .geb .l8{
+    background:url(../images/upload/index/pic_index_style_s08.png) no-repeat;
+}
+/*       装修风格     */
+.liucheng p{
+    color: #333;
+    font-size: 30px;
+}
+.liucheng div{
+    height: 140px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+.liucheng li{
+    
+    float: left;
+    width: 86px;
+    height: 0px;
+    margin: 0 57px;
+    text-align: center;
+    padding-top:100px ;
+    background:url(../images/img/ico_sprite_index_step.png) no-repeat 14px 0;
+}
+.liucheng .l2{
+    background-position: -191px 0;
+}
+.liucheng .l3{
+    background-position: -398px 0;
+}.liucheng .l4{
+    background-position: -590px 0;
+}.liucheng .l5{
+    background-position: -792px 0;
+}.liucheng .l6{
+    background-position: -995px 0;
+}
+/*   装修服务流程 */
+.changshi1 .l1{
+    font-size: 30px;
+    margin-right: 40px;
+}
+.changshi1 li{
+    float: left;
+    margin-right: 15px;
+}
+.changshi2{
+    height: 340px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.changshi2 .erl{
+    float: left;
+    width: 474px;
+    height: 340px;
+    background:url(../images/upload/index/pic_index_tips03.jpg);
+    position: relative;
+}
+.changshi2 .erl1{
+    width: 100%;
+    height: 48px;
+    background-color: rgba(00,00,00,0.7);
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 48px;
+}
+.changshi2 .erl1 p{
+    float: left;
+}
+.changshi2 .erl1 ul{
+    float: right;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    right: 15px;
+}
+.changshi2 .erl1 li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #000;
+}
+.changshi2 .erc{
+    width: 434px;
+    float: left;
+    margin: 0 30px;
+}
+.changshi2 .erc h2{
+    font-size: 20px;
+}
+.changshi2 .erc .ercp{
+    font-size: 14px;
+}
+.changshi2 .erc p{
+    font-size: 16px;
+}
+.changshi2 .erc p span{
+    font-size: 12px;
+    float: right;
+}
+.changshi2 .err{
+    width: 232px;
+    height: 340px;
+    float: right;
+    background-color: #ccc;
+}
+/*     装修常识     */

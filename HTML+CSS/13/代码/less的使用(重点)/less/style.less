@@ -1,0 +1,61 @@
+@base-color:pink;   /*定义变量*/
+@w:300px;
+
+.shitihua(@w,@h,@bgc){   /* 定义函数(功能)*/
+    width: @w;
+    height: @h;
+    background-color: @bgc;
+}
+
+/*   .shitihua(100px,200px,red);  调用  */ 
+//   .shitihua(300px,300px,skyblue);
+div{
+    width: 100px;
+    height: 100px;
+    background-color: @base-color;
+}
+p{
+    color:@base-color;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 500px;
+
+    li{
+        color:@base-color;   /*使用变量*/ 
+    }
+
+    a{
+        color:@base-color;
+        
+    }
+
+    a.red{
+        color:red;
+
+        &.fs40{   /* &是less的特殊符号，表示选中同时拥有red和fs40这两个类的a标签*/
+            font-size: 40px;
+        }
+        
+    }
+}
+
+
+.box{
+    width: @w/2;
+    height: @w;
+    background-color: pink;
+}
+
+.box2{
+    .shitihua(100px,200px,red);   /* 调用 */ 
+}
+.p01{
+    .shitihua(300px,300px,skyblue);
+}
+.p02{
+    .shitihua(100px,100px, yellow);
+}

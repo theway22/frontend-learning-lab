@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 234px;
+            height: 488px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            
+        }
+        .eye{
+            perspective:1500px;   
+            /*透视属性， 理解为眼睛到这个变换的元素的距离
+            一般给到700px到1500px
+            700px 表示更近， 这个物体就会显得越大
+            1500px  表示更远， 这个物体就会显得越小
+            */
+        }
+        img{
+            transform-origin:right;
+            transition:all .5s;
+            transform-style:preserve-3d;   /*  配合perspective透视属性来使用，perspective一般加在transform-style的盒子的父级上 */
+        }
+        div:hover img{
+            transform:rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="eye"><img src="images/door.png" alt=""></div>
+</body>
+</html>

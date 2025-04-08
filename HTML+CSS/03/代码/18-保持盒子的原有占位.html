@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*内边距：  盒子的内容到盒子的边框之间的距离*/
+        div{
+            width: 278px;
+            height: 278px;
+            border: 1px solid #000;
+            padding:10px;  /*  合属性  */
+        }
+
+
+        /* 特点：
+            给盒子添加内边距 或者边框  都会增大盒子的占位。
+            盒子的真正占位 =  width/height  + padding + border
+         */
+
+         /* 总结：
+            如果盒子想要保持原有的300 * 300的占位
+            加了padding和border之后，就应该(在盒子的宽/高度中)减掉这两个宽度/高度
+         
+          */
+    </style>
+</head>
+<body>
+    <div>文字</div>
+    <div>文字</div>
+</body>
+</html>

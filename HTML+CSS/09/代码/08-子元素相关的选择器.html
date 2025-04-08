@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box p:nth-child(2){   /*  选择到作为第2个子元素的p元素   */
+        /* div p:nth-of-type(2){   选择第二个p标签  */
+            background-color: pink;
+        }
+
+        .box>span{     /*下一级符号，只选中div下一级的span标签*/
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>这是第1个p标签</p>
+        <span>这是span标签</span>
+        <p>这是第2个p标签</p>
+        <p>这是第3个p标签 <span>这是span标签</span></p>
+        <p>这是第4个p标签</p>
+        <p>这是第5个p标签</p>
+        <p>这是第6个p标签</p>
+    </div>
+</body>
+</html>

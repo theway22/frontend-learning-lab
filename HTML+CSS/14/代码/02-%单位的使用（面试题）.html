@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 800px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+        .box>div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+             /*看父级宽度的百分比*/
+            /* padding-left: 10%;   */
+
+            /* 纵向的padding(margin)也是看父级宽度的百分比*/
+            padding-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>文字</div>
+    </div>
+</body>
+</html>

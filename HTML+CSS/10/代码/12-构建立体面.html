@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            perspective: 700px;
+        }
+        ul,li{
+            width: 200px;
+            height: 200px;
+        }
+        .box ul{
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }
+        .box li{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .box li:nth-of-type(1){
+            background-color: pink;
+            /* opacity: 0; */
+            transform:translateZ(100px);
+        }
+        .box li:nth-of-type(2){
+            background-color: green;
+            transform:rotateX(-90deg) translateZ(100px);
+        }
+        .box:hover ul{
+            transform:rotateX(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>前面</li>
+            <li>底面</li>
+        </ul>
+    </div>
+</body>
+</html>

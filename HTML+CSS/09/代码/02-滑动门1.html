@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0; list-style: none;}
+        .nav{
+            margin: 200px;
+        }
+        .nav li{
+            float: left;
+            margin-right: 10px;
+        }
+        .nav a{
+            height: 35px;
+            line-height: 35px;
+            background: url(images/left.png) no-repeat;
+            display: block;
+            padding-left: 10px;
+        }
+        .nav span{
+            height: 35px;
+            background: url(images/hdm.png) no-repeat right 0;
+            display: block;
+            padding-right: 30px;
+        }
+
+        /* 
+        滑动门总结：
+        布局：
+            <li>
+                <a href="#">
+                    <span>首页</span>
+                </a>
+            </li>
+        a给背景图片和padding-left
+        span给背景图片和padding-right
+         */
+         .new1 a{
+            width: 120px; ;
+                background:url(images/left.png) no-repeat;
+                display: block;
+                height: 35px;
+                line-height: 35px;
+                padding-left: 10px;
+         }
+         .new1 span{
+            width:120px ;
+                background:url(images/hdm.png) no-repeat right 0;
+                display: block;
+                height: 35px;
+                line-height: 35px;
+                padding-right: 30px;
+         }
+    </style>
+</head>
+<body>
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>技术联盟</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>关于我们移</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>联系我们</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <li class="new1">
+            <a href="#">
+                <span>新闻</span>
+            </a>
+        </li>
+</body>
+</html>

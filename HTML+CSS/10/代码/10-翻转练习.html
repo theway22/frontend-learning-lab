@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p,div{ float: left;margin: 0 20px;}
+        div{ 
+            margin-top: 100px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+        img{transition: all .5s;}
+
+        .up img{transform-origin: top;}
+        .down img{transform-origin: bottom;}
+        .left img{transform-origin: left;}
+        .right img{transform-origin: right;}
+
+        .up:hover img,.down:hover img{
+            transform:rotateX(180deg);
+        }
+        .left:hover img,.right:hover img{
+            transform:rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <p>上下翻转:</p>
+    <div class="up"><img src="images/shn.jpg" alt=""></div>
+    <div class="down"><img src="images/shn.jpg" alt=""></div>
+    <p>左右翻转:</p>
+    <div class="left"><img src="images/shn.jpg" alt=""></div>
+    <div class="right"><img src="images/shn.jpg" alt=""></div>
+</body>
+</html>

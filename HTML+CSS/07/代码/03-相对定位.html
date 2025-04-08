@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: pink;
+        }
+        .box2{
+            background-color: green;
+            /* 相对定位  */
+            position: relative;
+            left: 10px;
+            top:30px;
+        }
+        .box3{
+            background-color: skyblue;
+        }
+        /* 
+        定位往往会配合方向词属性来书写    top  bottom  left  right
+        
+
+        相对定位的特点：
+        1、占位 (原来所在的位置)
+        2、位置偏移的参考点： 盒子原来所在位置的左上角的点
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

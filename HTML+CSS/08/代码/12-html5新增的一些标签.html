@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }   
+        .clearfix {*zoom: 1;} 
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        header{
+            height: 150px;
+            border: 1px solid #000;
+        }
+        nav{
+            height: 40px;
+            border: 1px solid #000;
+        }
+        aside{
+            float: left;
+        }
+        article{
+            float: right;
+        }
+        aside{
+            width: 200px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+        article{
+            width: 780px;
+            height: 980px;
+            border: 1px solid #000;
+        }
+        footer{
+            height: 60px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="header"></div> -->
+    <header class="wrap">
+        头部
+    </header>
+    <nav class="wrap">导航</nav>
+    <section class="wrap clearfix">
+        <aside>侧边栏</aside>
+        <article>
+            <h1>标题</h1>
+            <p>段落1</p>
+            <p>段落2</p>
+            <p>段落3</p>
+        </article>
+    </section>
+    <footer class="wrap">
+        尾部
+    </footer>
+</body>
+</html>

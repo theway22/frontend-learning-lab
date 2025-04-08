@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1617807",
+      "name": "1101加载中",
+      "font_class": "jiazaizhong",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    }
+  ]
+}

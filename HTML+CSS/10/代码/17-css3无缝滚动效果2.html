@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000;
+        }
+        *{margin: 0;padding: 0;list-style: none;}
+        .box{
+            width: 600px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box:hover ul{
+            /* 让ul元素动画暂停的属性 */
+            animation-play-state:paused;
+        }
+        /* 先把所有的图片跳暗*/
+        .box:hover li{
+            opacity: .5;
+        }
+        /* 再把单独鼠标移上的li调亮*/
+        .box li:hover{   /*鼠标移上li的时候*/
+            opacity: 1;
+        }
+        .box ul{
+            width: 1800px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: play 6s linear infinite;
+        }
+        .box li{
+            float: left;
+            transition: all .4s;
+        }
+
+        @keyframes play{
+            from{
+                left: 0;
+            }
+            to{
+                left: -1200px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li><img src="images/01.jpg" alt=""></li>
+            <li><img src="images/02.jpg" alt=""></li>
+            <li><img src="images/03.jpg" alt=""></li>
+            <li><img src="images/04.jpg" alt=""></li>
+
+            <li><img src="images/01.jpg" alt=""></li>
+            <li><img src="images/02.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

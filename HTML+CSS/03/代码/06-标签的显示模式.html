@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签   标记  元素  指的一个意思*/
+        div{
+            width:300px;
+            height:200px;
+            background-color:pink;
+        }
+        p{
+            width:100px;
+            height:100px;
+            background-color:blue;
+        }
+        /*
+            块级元素 特点：  1、独占一整行 2、给宽和高是起作用的
+            h1-h6   div  p  ul   li   ol   dl  dt  dd
+
+            行内(内联)元素 特点：  
+                1、不会独占一整行，多个行内元素可以并排
+                2、给宽和高不起作用的。本身宽高靠内容撑开
+            span  strong  b  u   i  em  ins  del
+
+            行内块元素 特点：
+                1、可以并排
+                2、给宽和高是起作用的
+            img  input
+        */
+        span{
+            width:300px;
+            height:200px;
+            background-color: green;
+        }
+
+        .img1{
+            width:100px;
+        }
+        .img2{
+            width:50px;
+        }
+    </style>
+</head>
+<body>
+    <div>div</div>
+    <p>p</p>
+    <h1>h1</h1>
+    <span>span</span>
+    <strong>strong</strong>
+    <em>em</em>
+    <img class="img1" src="images/img1.jpg" alt="">
+    <img class="img2" src="images/arr.gif" alt="">
+</body>
+</html>

@@ -1,0 +1,27 @@
+/* 样式清除 */
+body,button,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea,a{font:12px/1.6em Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight: normal;}
+ol,ul{list-style:none}
+a{text-decoration:none}
+/* a:hover{text-decoration:underline} */
+img{border:0}
+button,input,select,textarea{font-size:100%; outline:none;}
+textarea{resize:none;}
+button{border-radius:0}
+table{border-collapse:collapse;}
+
+/* 清除浮动 */
+ .clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }   
+ .clearfix {*zoom: 1;} 
+
+
+/*版心设置*/
+.wrap{
+    margin: 0 auto;
+    width: 1226px;
+}
+
+/* 设置原子类 */
+.l{float: left;}
+.r{float: right;}

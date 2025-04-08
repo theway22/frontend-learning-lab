@@ -1,0 +1,23 @@
+{
+  "id": "2120083",
+  "name": "chongzhou01",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7570901",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "15112702",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}

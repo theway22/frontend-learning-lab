@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width:500px;
+            height:500px;
+            background-color: pink;
+            /* border-top:1px solid #000; */
+            /* padding-top:50px */
+            overflow:hidden;
+        }
+        .box2{
+            width:200px;
+            height:200px;
+            background-color: green;
+            margin-top:50px;
+        }
+        /* 
+            外边距塌陷： 父子级两个盒子，给子级盒子添加上外边距，会影响到父级盒子也塌陷下来。
+
+            解决方式：
+            1、给父级盒子添加上边框
+            2、不直接在子级中添加外边距，直接在父盒子上添加内边距
+            3、在父盒子上添加overflow:hidden;
+        */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

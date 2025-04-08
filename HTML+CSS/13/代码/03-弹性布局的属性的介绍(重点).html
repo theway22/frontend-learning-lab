@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            display: flex;
+            /* flex-direction的4个值：row （默认值），row-reverse，column，column-reverse */
+            /* flex-direction 设置主轴的方向     次轴(侧轴)
+            当设置flex-direction:row;主轴为横向的时候，次轴(侧轴)就是纵向
+            当设置flex-direction:column;主轴为纵向的时候，次轴(侧轴)就是横向
+            */
+            flex-direction:row;
+
+            /* justify-content  设置主轴的对齐方式 */
+            /* justify-content的5个值：flex-start（默认值），flex-end，center，space-between，space-around */
+            /* justify-content:center; */
+
+            /* align-items设置侧轴对齐方式 */
+            /* align-items属性的5个值：  flex-start，flex-end，center，stretch，baseline */
+            /* stretch侧轴拉伸，侧轴拉伸不给高度，否则看不到效果 */
+            /* baseline设置文字的基线对齐 */
+            /* align-items:baseline; */
+
+
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box>div{
+            width: 100px;
+            height: 100px;
+        }
+        .box>div:nth-of-type(1){
+            font-size: 20px;
+            background-color: pink;
+        }
+        .box>div:nth-of-type(2){
+            font-size: 30px;
+            /* height: auto; */
+            background-color: green;
+        }
+        .box>div:nth-of-type(3){
+            font-size: 40px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

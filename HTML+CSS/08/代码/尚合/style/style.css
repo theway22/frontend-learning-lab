@@ -1,0 +1,30 @@
+/* 清除浏览器的默认样式 */
+body,button,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea,a{font:12px/1.6em Microsoft Yahei,Heiti,NSimSun,SimSun,FangSong;}
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight: normal;}
+ol,ul{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+img{border:0}
+button,input,select,textarea{font-size:100%; outline:none;}
+textarea{resize:none;}
+button{border-radius:0}
+table{border-collapse:collapse;}
+
+.clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }   
+.clearfix {*zoom: 1;}   
+
+
+.wrap{
+    width: 980px;
+    margin: 0 auto;
+}
+.header{
+    height: 62px;
+    background-color: pink;
+}
+
+.nav{
+    height: 55px;
+    background-color: #ccc;
+}

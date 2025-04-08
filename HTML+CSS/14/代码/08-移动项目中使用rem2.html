@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;}
+        div{
+            width: 5rem;
+            height: 100px;
+            background-color: pink;
+        }
+        /* 问：(前提：把屏幕分成10份)在宽度为750的设计图下，一个元素的宽度是300px，在样式代码里写多少rem?
+        
+        300px = ???rem
+        
+        ??? = 300 / rem = 300 / (750/10)  = 300/75 = 4
+
+
+
+        问：(前提：把屏幕分成10份)在宽度为750的设计图下，一个元素的宽度是375px，在样式代码里写多少rem?
+
+        375px = ???rem
+        ??? = 375 / 75 = 5rem
+
+
+        总结：在项目中如何书写 rem？？
+        量出长度之后，除以(设计图宽度/10) 
+
+        210*60
+        */
+        div{
+            width: 210/75rem;
+            height:60/75rem;
+        }
+
+        /*  书写一个占一半的盒子  */
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <script src="v.js"></script>
+</body>
+</html>

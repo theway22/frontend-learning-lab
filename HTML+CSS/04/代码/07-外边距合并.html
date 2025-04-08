@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+        .box1{
+            margin-bottom:50px;
+        }
+        .box2{
+            margin-top:80px;
+        }
+        /*
+            外边距合并：  两个盒子上下排列，给上盒子一个下外边距，给下盒子一个上外边距，这时，真实的距离是最大的这个外边距。这种现象称为外边距合并。
+
+            只有竖直方向会有外边距合并的情况。
+
+
+            这种问题在开发中可以避免，不需要解决
+         */
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+</html>

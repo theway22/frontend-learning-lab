@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: pink;
+            position: relative;
+        }
+        span{
+            width: 175px;
+            height: 175px;
+            background: url(images/TB1vJ0POwTqK1RjSZPhXXXfOFXa-175-215.png);
+            position: absolute;
+            left: 60px;
+            top: 0;
+            display: none;    /*默认情况下隐藏span*/
+        }
+        /* 鼠标移上div盒子 里面的span要显示 */
+        div:hover span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        按钮
+        <span></span>
+    </div>
+</body>
+</html>

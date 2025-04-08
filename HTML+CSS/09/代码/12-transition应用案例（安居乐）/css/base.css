@@ -1,0 +1,227 @@
+body,button,dd,dl,dt,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea,a{font:12px/1.6em Microsoft Yahei,Heiti,NSimSun,SimSun,FangSong;}
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight: normal;}
+ol,ul{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+img{border:0}
+button,input,select,textarea{font-size:100%; outline:none;}
+textarea{resize:none;}
+button{border-radius:0}
+table{border-collapse:collapse;}
+
+.clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }   
+.clearfix {*zoom: 1;}  
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.he{
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #dddddd;
+}
+.header{
+    height: 40px;
+    /* background-color: pink; */
+    line-height: 40px;
+}
+.header_l{
+    float: left;
+    background: url(../images/img/ico_mark.png) no-repeat 0 13px;
+    padding-left: 20px;
+}
+
+.header_r{
+    float: right;
+}
+.header_l span{
+    color: #01af63;
+}
+.header_r li{
+    float: left;
+}
+.header_r li a{
+    color: #666666;
+    padding: 0 14px;
+    border-right: 1px solid #c9bdc9;
+}
+.header .header_r_1 a{
+    color: #ff4e00;
+}
+.header .header_r_5 a{
+    border: none;
+}
+.header .header_r_4 a{
+    color: #01af63;
+    background: url(../images/img/ico_phone.png) no-repeat 10px 2px;
+    padding-left: 25px;
+}
+.logo_t{
+    height: 125px;
+}
+.logo_t_l{
+    float: left;
+    height: 125px;
+    width: 125px;
+    background:url(../images/img/logo.png) no-repeat 0px 20px;
+    cursor: pointer;
+}
+.logo_t-r{
+    float: right;
+    margin-right: 320px;
+    margin-top: 40px;
+    width: 480px;
+    height: 36px;
+    border: 2px solid #01af63;
+}
+.logo_t-r span{
+    display: block;
+    border-right: 2px solid #01af63;
+    width: 83px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    float: left;
+    
+}
+.logo_t-r span::after{
+    margin-top: 15px;
+    float: right;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 10px;
+    background: url(../images/img/ico_arrow.png) no-repeat 0px 0px;
+    cursor: pointer;
+}
+.logo_t-r input{
+    float: left;
+    height: 34px;
+    padding-left: 10px;
+    border: none;
+}
+.logo_t-r p{
+    height: 36px;
+    width: 80px;
+    float: right;
+    color: #fff;
+    background-color: #01af63;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.logo_b li{
+    float: left;
+    
+    margin-right: 70px;
+}
+.logo_b a{
+    padding: 0 10px;
+    color: #666666;
+}
+.logo_b  .current{
+    color: #01af63;
+    border-bottom: 2px solid #01af63;
+}
+.logo_b a:hover{
+    color: #01af63;
+    text-decoration: none;
+    border-bottom: 2px solid #01af63;
+}
+/*      头部    */
+
+
+
+
+
+
+
+
+.wang{
+    height: 260px;
+    background-color: #f1f1f1;
+}
+
+.wang1 li{
+    float: left;
+    width: 300px;
+    margin-top: 100px;
+    color: #01af63;
+}
+.wang1 li::before{
+    float: left;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url(../images/img/ico_sprite_index_service.png) no-repeat 16px 19px;
+}
+.wang1 .l2::before{
+    background-position: -276px 19px;
+}
+.wang1 .l3::before{
+    background-position: -580px 19px;
+}
+.wang1 .l4::before{
+    background-position: -863px 19px;
+}
+.wang1 li p{
+    font-size: 16px;
+    margin-top: 35px;
+}
+/*     网上预定     */
+.footerb{
+    background:url(../images/img/bg_footer.png);
+}
+.footer_l{
+    float: left;
+}
+.footer_l dl{
+    float: left;
+    margin-right: 110px;
+    margin-top: 95px;
+}
+.footer_l dt{
+    font-stretch: 16px;
+    font-weight: 700;
+    color: #01af63;
+    margin-bottom: 40px;
+}
+.footer_l dd{
+    line-height:32px;
+    color: #919191;
+}
+.footer_r{
+    float: right;
+}
+.footer_r li{
+    margin-top: 95px;
+    float: left;
+    width: 119px;
+    height: 119px;
+    margin-right: 60px;
+    padding-top: 130px;
+    text-align: center;
+    color: #919191;
+}
+.footer_r .l1{
+    background:url(../images/img/pic_footer_qrcode01.png) no-repeat;
+}
+.footer_r .l2{
+    background:url(../images/img/pic_footer_qrcode02.png) no-repeat;
+}
+/*           尾部      */
+.dibu{
+    height: 120px;
+    background-color: #393939;
+    text-align: center;
+    padding-top: 50px;
+    color: #adb99d;
+}
+.dibu .img2{
+    margin: 0 27px;
+}

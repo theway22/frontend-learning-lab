@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        .header{
+            height: 75px;
+            background: url(images/weixin_bg1d20af.jpg);
+        }
+        .header li{
+            float: left;
+            margin: 21px 10px;
+            
+        }
+        .header a{
+            height: 33px;
+            line-height: 33px;
+            display: block;
+            background: url(images/sprite.png) no-repeat 0 -192px;
+            padding-left: 20px;
+            color:#fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .header span{
+            height: 33px;
+            display: block;
+            background: url(images/sprite.png) no-repeat right -192px;
+            padding-right:20px;
+        }
+
+        /* 
+        鼠标移上a的时候，a的背景图片位置要改，span的背景图片位置要改
+         */
+        .header a:hover,.header a:hover span{
+            background-position-y: -144px;
+        }
+        
+
+        /* .header a:hover span{  /* 鼠标以上a标签的时候，里面的span的样式 
+            background-position-y: -144px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li>
+                <a href="#">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>联系我们</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>首页</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  权重: 谁的权重更高就听谁的    (“谁”指的是选择器) 
+        
+            * < 标签选择器 < 类选择器 < id选择器 < 行内样式  <  !important
+        */
+        *{
+            color:blue!important; 
+        }
+        #odiv{
+            color:red;
+        }
+        .box{
+            color:yellow;
+        }
+        div{
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="odiv" style="color:pink">叩丁狼</div>
+</body>
+</html>

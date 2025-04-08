@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 80%;
+            height: 300px;
+            border: 1px solid #000;
+            display: flex;
+        }
+        .left{
+            width: 200px;
+            height: 300px;
+            background-color: pink;
+        }
+        .center{
+            flex:1;  /* 分蛋糕，兄弟元素固定长度， flex:1表示剩下的都被这个盒子占有*/
+            height: 300px;
+            background-color: skyblue;
+        }
+        .right{
+            width: 100px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">1</div>
+        <div class="center">2</div>
+        <div class="right">3</div>
+    </div>
+</body>
+</html>

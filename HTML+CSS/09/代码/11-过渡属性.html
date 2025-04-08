@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 50px;
+            background-color: green;
+            /*让这个盒子的变化产生过渡效果(可以看到变化过程)*/
+            /* transition:width 1s,height 2s; */
+
+            /* 让所有的变化都产生过渡效果的写法(最常写的写法) */
+            /* transition: all .4s; */
+
+
+            /* transition这个属性添加在谁身上？？？  产生变化的这个盒子上(不要写在hover上)  */
+
+
+            /* transition: 要发生变化的属性名  发生过渡的时间 动画曲线 过渡的延迟时间;
+            linear 匀速运动
+            
+             */
+
+             /* 属性名all 过度10s 线性变化 2s后开始 */
+            transition: all 10s linear 2s;
+        }
+
+        .box:hover{
+            width: 1000px;
+            /* height:100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

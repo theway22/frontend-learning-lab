@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 在600到1000才是绿色 */
+        @media (min-width:600px) and (max-width:1000px){
+            /* And表示这两个条件同时满足才加载这里的代码 
+            and两端的空格必须要有，and不区分大小写
+            */
+            div{
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

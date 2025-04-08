@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* transform-origin   可以控制旋转中心点(px  % )和 旋转轴(top bottom left right) 
+        
+        transform-origin 和transition一致，谁在发生变换就放在谁身上
+        */
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 100px auto;
+        }
+        img{
+            transform-origin: bottom;
+            /* transition: all 1s; */
+        }
+        div:hover img{
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div><img src="images/shn.jpg" alt=""></div>
+</body>
+</html>

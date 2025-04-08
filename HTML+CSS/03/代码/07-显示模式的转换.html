@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            width:300px;
+            height:300px;
+            background-color:pink;
+            /* display:block;   把元素转成 块级元素， 就会具有块级元素的所有特点 */
+            display:inline-block;  /*把元素转成 行内块元素， 就会具有行内块元素的所有特点*/
+        }
+        div{
+            width:200px;
+            height:200px;
+            background-color:skyblue;
+            display:inline; /*把元素转成 行内元素， 就会具有行内元素的所有特点*/
+        }
+        /*  div 默认的显示模式是什么？  block
+            span  默认的显示模式是什么？   inline
+            img  默认的显示模式是什么？  inline-block
+        */
+    </style>
+</head>
+<body>
+    <span></span><strong>strong</strong>
+    <div>这是div标签</div>
+</body>
+</html>

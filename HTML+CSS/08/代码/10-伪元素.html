@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+
+        /* ::before    
+        在盒子内部最开始的地方创建一个行内元素
+        必须要有content属性
+        这并不是一个真实标签，通过js无法获取到它
+         */
+        div::before{
+            content: "123";
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-color: pink;
+        }
+        /* ::after    
+        在盒子内部结束的地方创建一个行内元素
+        必须要有content属性
+        这并不是一个真实标签，通过js无法获取到它
+         */
+        div::after{
+            content: "";
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-color: pink;
+        }
+    </style>
+    <!-- 百度    爬取网站的程序---搜索引擎蜘蛛 -->
+</head>
+<body>
+    <div>
+        <!-- <span></span> -->
+        文字
+
+    </div>
+</body>
+</html>

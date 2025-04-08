@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big{
+            width: 500px;
+            height: 400px;
+            background-color: pink;
+            margin: 100px auto;
+            position: relative;
+        }
+        .small{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+
+            position:absolute;
+            left: 10px;
+            top: 30px;
+        }
+        /*
+        绝对定位的特点：
+        1、不占位 (原来所在的位置)
+        2、位置偏移的参考点： 会从父级盒子开始，一级一级往上找，确认父级的这些盒子有没有定位。 如果有定位(相对定位或绝对定位或固定定位)，就按照这个定位的父级盒子来参考进行偏移。 如果所有的父级盒子都没有定位，就按照网页左上角来参考进行偏移。
+        
+        
+        */
+    </style>
+</head>
+<body>
+    <p>不会找到这个p元素身上</p>
+    <div class="big">
+        <div class="small">绝对定位</div>
+    </div>
+    <!-- <div class="big">
+        <div class="small"></div>
+    </div> -->
+</body>
+</html>
