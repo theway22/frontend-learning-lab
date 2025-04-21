@@ -42,7 +42,7 @@
                 <td>${datas[i].age}</td>
                 <td>${datas[i].gender}</td>
             */
-            for(var key in datas[i]){ // 遍历对象
+            for(var key in datas[i]){ // 遍历对象           for in是用来遍历对象的，不能用来遍历数组
                 str = str + `<td>${datas[i][key]}</td>`
             }
             str = str + `</tr>`

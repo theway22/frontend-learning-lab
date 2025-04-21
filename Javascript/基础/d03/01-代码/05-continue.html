@@ -15,6 +15,11 @@
         if(i===3){
             continue;
             console.log("continue后面的代码不会执行");
+            // 问题：为什么后面的console.log(i)会不执行了？continue不是在if里面吗？
+            // 答：continue 的作用范围是 整个循环体，而不仅是 if 语句内部。continue 执行时，当前循环块内剩余的所有代码都会被跳过。
+            // 因此 console.log(i) 在 i=3 时不会执行。
+            // 对比 break：
+            // break 会直接终止整个循环，而 continue 只是跳过当前迭代。
         }
         console.log(i);
     }

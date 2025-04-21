@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+        //     let、var、const 的区别详解
+        // 在 JavaScript 中，let、var、const 都用于声明变量，但它们的作用域、提升（hoisting）、重复声明和可变性等方面有重要区别。以下是它们的核心差异：
+
+        // 1. 作用域（Scope）
+        // 关键字	作用域类型	示例说明
+        // var	函数作用域	在函数内声明，整个函数可用
+        // let	块级作用域	只在 {} 代码块内有效
+        // const	块级作用域	同 let，但变量不可重新赋值
+        // 示例对比
+        // javascript
+        // var 是函数作用域
+        // function varExample() {
+        // if (true) {
+        //     var a = 10;
+        // }
+        // console.log(a); // 输出 10（仍然可以访问）
+        // }
+
+        // // let/const 是块级作用域
+        // function letExample() {
+        // if (true) {
+        //     let b = 20;
+        //     const c = 30;
+        // }
+        // console.log(b); // 报错：b is not defined
+        // console.log(c); // 报错：c is not defined
+        // }
+
+
+
+        // 2. 变量提升（Hoisting）
+        // 关键字	是否提升	初始化值
+        // var	✅ 提升	undefined
+        // let	❌（暂时性死区）	未初始化
+        // const	❌（暂时性死区）	未初始化
+        // 示例对比
+        // javascript
+        // console.log(x); // undefined（var 提升但未赋值）
+        // var x = 5;
+
+        // console.log(y); // 报错：Cannot access 'y' before initialization
+        // let y = 10;
+
+
+
+        // 3. 重复声明
+        // 关键字	是否允许重复声明
+        // var	✅ 允许
+        // let	❌ 不允许
+        // const	❌ 不允许
+        // 示例对比
+        // javascript
+        // var name = "Alice";
+        // var name = "Bob"; // 允许，不会报错
+
+        // let age = 25;
+        // //let age = 30; // 报错：Identifier 'age' has already been declared
+
+        // const PI = 3.14;
+        //const PI = 3.14159; // 报错：Identifier 'PI' has already been declared
+
+
+
+        // 4. 可变性（Reassignment）
+        // 关键字	是否可重新赋值	是否可变（对象/数组）
+        // var	✅ 可以	✅ 可以修改内容
+        // let	✅ 可以	✅ 可以修改内容
+        // const	❌ 不可以	✅ 可以修改内容
+        // 示例对比
+        // javascript
+        // var 和 let 可以重新赋值
+        // var score = 90;
+        // score = 100; // 允许
+
+        // let count = 1;
+        // count = 2; // 允许
+
+        // const 不能重新赋值，但可以修改对象/数组
+        // const person = { name: "Alice" };
+        // person.name = "Bob"; // 允许（修改属性）
+        // // person = { name: "Charlie" }; // 报错：不能重新赋值
+
+        const numbers = [1, 2, 3];
+        numbers.push(4); // 允许（修改数组）
+        console.log(numbers); // [1, 2, 3, 4]
+        
+        // numbers = [5, 6]; // 报错：不能重新赋值
+
+
+
+        // 5. 全局变量 vs. 全局对象属性
+        // var 在全局作用域声明时，会成为 window 的属性（浏览器环境）。
+
+        // let 和 const 不会。
+
+        // javascript
+        // var globalVar = "I'm global";
+        // let globalLet = "I'm global but not on window";
+        // const globalConst = "Me neither";
+
+        // console.log(window.globalVar); // "I'm global"（浏览器环境）
+        // console.log(window.globalLet); // undefined
+        // console.log(window.globalConst); // undefined
+        // 6. 最佳实践总结
+        // 关键字	适用场景	推荐程度
+        // const	推荐默认使用，声明常量或不可变引用	⭐⭐⭐⭐⭐
+        // let	需要重新赋值的变量（如循环计数器）	⭐⭐⭐⭐
+        // var	旧代码兼容，现代开发尽量避免	⭐（不推荐）
+        // 为什么推荐 const？
+        // 更安全：避免意外修改变量。
+
+        // 更清晰：明确变量用途（常量 or 可变）。
+
+        // 优化性能：某些引擎对 const 有额外优化。
+
+        // 示例：优先使用 const
+        // javascript
+
+        // 推荐
+       // const PI = 3.14159;
+        // const users = ["Alice", "Bob"];
+        // users.push("Charlie"); // 允许修改数组
+
+        // // 需要重新赋值时才用 let
+        // let counter = 0;
+        // counter++;
+
+        // 避免 var
+        // var oldSchool = "Don't use me";
+
+
+
+        // 7. 常见问题
+        // Q1: const 声明的对象/数组真的不可变吗？
+        // const 只保证变量引用的地址不变，但对象/数组的内容可以修改。
+
+        // 如果希望完全不可变，可以使用 Object.freeze()：
+
+        // javascript
+        const obj = Object.freeze({ name: "Alice" });
+        obj.name = "Bob"; // 静默失败（严格模式会报错）
+
+
+
+        // Q2: 什么时候必须用 let？
+        // 需要 重新赋值 的场景，如循环计数器：
+
+        // javascript
+        for (let i = 0; i < 10; i++) {
+        console.log(i);
+        }
+
+
+
+        // Q3: 为什么 var 还在使用？
+        // 历史遗留代码（ES5 及之前）。
+
+        // 特殊需求（如故意利用函数作用域或提升特性）。
+
+
+        
+        // 总结
+        // 特性	var	let	const
+        // 作用域	函数作用域	块级作用域	块级作用域
+        // 提升	✅（初始值 undefined）	❌（暂时性死区）	❌（暂时性死区）
+        // 重复声明	✅ 允许	❌ 不允许	❌ 不允许
+        // 重新赋值	✅ 允许	✅ 允许	❌ 不允许
+        // 适用场景	旧代码兼容	需要重新赋值的变量	默认选择
+        // 现代 JavaScript 开发建议：
+
+        // 默认用 const（除非需要重新赋值）。
+
+        // 需要变量变化时用 let。
+
+        // 避免使用 var（除非维护旧代码）。
+</script>
+<body>
+    
+</body>
+</html>
